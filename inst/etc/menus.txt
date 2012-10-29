@@ -1,0 +1,6 @@
+#type    menu/item   operation/parent  label                              command/menu                activation    install?
+menu    ptMenu       topMenu         ""                                      ""                          ""                      "" 
+item    ptMenu       command         "Plot Probabilites Poisson Tweedie"       ProbabilitePT                     ""                      "packageAvailable('poistweedie')"
+item    ptMenu       command         "Simulation Probabilites Poisson Tweedie"  powerExample                          ""           "packageAvailable('poistweedie')"   
+item    ptMenu       command         "Gui for poistweedie package  "            GuiPT                          ""                      "packageAvailable('poistweedie')"
+item    topMenu      cascade         "Poisson Tweedie"                          ptMenu                        ""                      "packageAvailable('poistweedie')"
